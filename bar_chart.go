@@ -167,12 +167,6 @@ func (b *barChart) render(result *defaultRenderResult, seriesList SeriesList) (B
 				X: x + barWidth>>1,
 				Y: top,
 			}
-			// 用于生成marker point
-			points[j] = Point{
-				// 居中的位置
-				X: x + barWidth>>1,
-				Y: top,
-			}
 			// 如果label不需要展示，则返回
 			if labelPainter == nil {
 				continue
