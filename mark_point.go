@@ -89,7 +89,7 @@ func (m *markPointPainter) Render() (Box, error) {
 		painter.OverrideDrawingStyle(Style{
 			FillColor: opt.FillColor,
 		}).OverrideTextStyle(textStyle)
-		for _, markPointData := range s.MarkPoint.Data {
+		for i, markPointData := range s.MarkPoint.Data {
 			textStyle.FontSize = labelFontSize
 			painter.OverrideTextStyle(textStyle)
 			p := points[i]
